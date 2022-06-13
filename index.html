@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
+
+
+
+    ">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -18,7 +22,7 @@
 
   </head>
   <body>
-    
+
     <header>
         <nav class="navbar navbar-expand-md navbar-light navbar-transparente fixed-top">
             <div class="container">
@@ -74,8 +78,9 @@
                             coisas, desde jogos que estou viciado até informações
                             sobre mim e meus periféricos.
                         </h4>
-                        <p class="bg-danger text-center p-1">Obs: o blog ta em construção, talvez algumas coisas funções ou páginas não funcionem.</p>
+                        <!-- <p class="bg-danger text-center p-1">Obs: o blog ta em construção, talvez algumas coisas funções ou páginas não funcionem.</p> -->
                     </div>
+                    <button class="btn btn-warning" onclick="abrirAlerta()">Aviso Importante</button>
                 </div>
             </div>
         </div>
@@ -85,26 +90,60 @@
         <div class="container">
             <div class="row">
 
-                <h3 class="bg-custom">
-                    Meu Perfil Steam
-                    <i class="fa fa-arrow-down"></i>
-                </h3>
-
-                <div class="col-md-2 ml-auto"><a class="btn btn-warning btn-custom" href="https://steamcommunity.com/id/Kitk/" target="_blank">Link</a></div>
-
-                <div class="col-md-12 bg-info p-1 mt-2">
-                    <img src="img/steam-profile.PNG" class="img-fluid">
+                <div class="col-md-12">
+                    <div class="card card-custom mb-2 bg-custom-border">
+                        <div class="card-header bg-custom-border text-white">
+                          Sobre mim
+                        </div>
+                        <div class="card-body bg-dark text-white">
+                          <h5 class="card-title">Jonas Marques</h5>
+                          <h6 class="card-subtitle mb-2">Desenvolvedor front-end e back-end.</h6>
+                          <p class="card-text">Gosto bastante da Área de Programação e Desenvolvimento Web, Comecei a me Interessar por Programação apartir do Discord, uma Rede Social. Programo por vontade própria e gosto bastante. É o que ocupa meu tempo.</p>
+                          <a class="btn btn-outline-primary" href="manutencao.html">Leia mais</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
+    <section class="mb-4">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-0">
+                    <h3 class="bg-custom-no">
+                        Meu Perfil Steam
+                        <i class="fa-brands fa-steam"></i>
+                    </h3>
+                </div>
+
+                <div id="perfil-steam" class="col-md-12 bg-info p-1 mt-">
+                    <img src="img/steam-profile.PNG" class="img-fluid">
+                </div>
+
+                <div class="col-md-0">
+                    <a class="btn btn-warning btn-custom" href="https://steamcommunity.com/id/Kitk/" target="_blank">
+                        Link <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Alerta -->
+    <script src="script.js"></script>
+
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   </body>
 </html>

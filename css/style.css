@@ -32,6 +32,18 @@ li span {
     border-radius: 1em;
 }
 
+.bg-custom-no {
+    background: #9828CD;
+    padding: 0.4em;
+    border-top-right-radius: 20px;
+    margin: 0;
+}
+
+.bg-custom-border {
+    background: #9828CD;
+    border-color: #9828CD;
+}
+
 .warning {
     padding: 0;
 }
@@ -39,6 +51,36 @@ li span {
 .btn-custom {
     padding: 10px 20px;
     
+}
+
+#perfil-steam.bg-info {
+    background-color: #9828CD!important;
+}
+
+.steam-btn {
+    background: #9828CD;
+    padding: 0.4em;
+    width: 272.03px;
+    border-radius: 20px;
+}
+
+.borda {
+    border: 1px solid red;
+}
+
+.card-custom {
+    color: black;
+}
+
+.btn-outline-primary {
+    color: #9828CD;
+    border-color: #9828CD;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: #9828CD;
+    border-color: #9828CD;
 }
 
 /* Barra de navegação */
@@ -75,6 +117,9 @@ nav.navbar-transparente {
     .h3-custom {
         font-size: 1.2em;
     }
+    .navbar-light .navbar-nav .nav-link {
+        padding-left: 1em;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -90,6 +135,9 @@ nav.navbar-transparente {
     }
     .h3-custom {
         font-size: 1.2em;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        padding-left: 1em;
     }
 }
 
