@@ -14,7 +14,7 @@ body {
 .navbar-light .navbar-nav .nav-link.actived {
     background: #9828CD;
     color: #9bf0e1;
-    border-radius: 20px;
+    border-radius: 1em;
 }
 
 /* conteudo */
@@ -36,6 +36,11 @@ li span {
     padding: 0;
 }
 
+.btn-custom {
+    padding: 10px 20px;
+    
+}
+
 /* Barra de navegação */
 nav.navbar-transparente {
     background: rgba(0, 0, 0, 0.6);
@@ -53,4 +58,25 @@ nav.navbar-transparente {
 /* setup estrutura */
 .background-custom h5 {
     color: white;
+}
+
+/* Breakpoints */
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .navbar-light .navbar-nav .nav-link.actived {
+        border-radius: 0;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 3em;
+    }
+    .btn-custom {
+        margin: 10px 15px;
+    }
 }
